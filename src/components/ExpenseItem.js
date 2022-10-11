@@ -16,7 +16,9 @@ const ExpenseItem = ({ title, amount, date }) => {
         <h2>{head}</h2>
         <div className="expense-item__price">{amount}</div>
       </div>
-      <button onClick={changeHead}>click</button>
+      <button disabled onClick={changeHead}>
+        click
+      </button>
     </Card>
   );
 };
