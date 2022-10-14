@@ -1,5 +1,7 @@
 @import "./ExpenseDate.scss";
 @import "./NewExpense.scss";
+@import "./chart.scss";
+@import "./expenseFilter.scss";
 
 .card {
   border-radius: 12px;
@@ -12,10 +14,15 @@
   margin: auto;
   width: 50rem;
   max-width: 95%;
+
+  .no-expense-text {
+    color: white;
+    text-align: center;
+  }
 }
 .App {
   background: #3a3a3a;
-  // height: 130vh;
+  height: 200vh;
 }
 .expense-item {
   display: flex;

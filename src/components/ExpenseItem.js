@@ -1,24 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "./Card";
 import ExpenseDate from "./ExpenseDate";
 
 const ExpenseItem = ({ title, amount, date }) => {
-  const [head, setHead] = useState(title);
-
-  const changeHead = () => {
-    setHead(!head);
-  };
-
   return (
     <Card className="expense-item">
       <ExpenseDate date={date} />
       <div className="expense-item__description">
-        <h2>{head}</h2>
+        <h2>{title}</h2>
         <div className="expense-item__price">{amount}</div>
       </div>
-      <button disabled onClick={changeHead}>
-        click
-      </button>
     </Card>
   );
 };
